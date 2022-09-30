@@ -15,6 +15,7 @@
     --footer-bg-color: #2F303A;
     --header-color-border: #ECECEC;
     --team-bg-color: #F5F4FA;
+    --client-color-primary: #AFB1B8;
 }
 
 body {
@@ -45,6 +46,7 @@ h1, h2, h3, h4, p, ul {
 ul, ol {
     margin: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 img {
@@ -90,8 +92,6 @@ img {
 
 .nav-item,
 .contact-item {
-    list-style: none;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -113,6 +113,24 @@ img {
     margin-left: auto;
 }
 
+.icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+/* .icon-mail:hover,
+.icon-mail:focus,
+.icon-phone:hover,
+.icon-phone:focus {
+    fill: currentColor;
+} */
 .nav-link:hover,
 .nav-link:focus,
 .contact-mail:hover,
@@ -139,7 +157,7 @@ img {
 
 .contact-mail,
 .contact-tel {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -153,7 +171,21 @@ img {
     padding: 200px 0 200px 0;
     text-align: center;
 
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--footer-bg-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
 }
 
 .hero-title {
@@ -171,6 +203,7 @@ img {
 
 .hero-btn {
     padding: 10px 32px;
+    border: none;
     border-radius: 4px;
     
     font-family: 'Roboto', sans-serif;
@@ -191,13 +224,24 @@ img {
 
 /*----------------section about------------------*/
 
-.about-us {
+.about-us,
+.clients {
     padding: 94px 0;
 }
 
-.about {
+.about,
+.client-list {
     display: flex;
     list-style-type: none;
+}
+.icon-about {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    background-color: var(--team-bg-color);
+    border-radius: 4px;
 }
 
 .about-title {
@@ -238,7 +282,8 @@ img {
 }
 
 .work-title,
-.team-title {
+.team-title,
+.client-title {
     margin-bottom: 50px;
 
     font-size: 36px;
@@ -267,7 +312,8 @@ img {
     background-color: var(--team-bg-color);
 }
 
-.team-list {
+.team-list,
+.client-list {
     display: flex;
 }
 
@@ -299,12 +345,51 @@ img {
 }
 
 .card-text {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--text-color-secondary);
+}
+
+/* -------------- clients ------------------ */
+.client-list {
+    display: flex;
+    gap: 30px;
+}
+.client-item {
+    width: 170px;
+    height: 92px;
+    /* outline: 1px solid red; */
+
+}
+
+.client-link {
+    display: flex;
+    fill: var(--client-color-primary);
+    border: 1px solid var(--client-color-primary);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-icon {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    fill: var(--client-color-primary);
+}
+
+.link-icon:hover,
+.link-icon:focus,
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--text-color-accent);
+    fill: var(--text-color-accent);
 }
 
 /* ----------------footer-------------------- */
