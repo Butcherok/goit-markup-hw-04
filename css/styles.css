@@ -354,7 +354,37 @@ img {
     color: var(--text-color-secondary);
 }
 
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soc-link {
+    display: flex;
+    border-radius: 50%;
+    padding: 12px;
+    background-position: center;
+    color: var(--client-color-primary);
+}
+
+.soc-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+    background-color: var(--text-color-accent);
+}
+
+.soc-icon:hover,
+.soc-icon:focus {
+    fill: var(--footer-color-text-secondary);
+}
+
 /* -------------- clients ------------------ */
+
 .client-list {
     display: flex;
     gap: 30px;
@@ -362,8 +392,6 @@ img {
 .client-item {
     width: 170px;
     height: 92px;
-    /* outline: 1px solid red; */
-
 }
 
 .client-link {
