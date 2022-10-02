@@ -119,18 +119,14 @@ img {
     margin-right: 10px;
     fill: currentColor;
 }
+
 .icon-phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
-/* .icon-mail:hover,
-.icon-mail:focus,
-.icon-phone:hover,
-.icon-phone:focus {
-    fill: currentColor;
-} */
+
 .nav-link:hover,
 .nav-link:focus,
 .contact-mail:hover,
@@ -365,21 +361,20 @@ img {
     border-radius: 50%;
     padding: 12px;
     background-position: center;
-    color: var(--client-color-primary);
+    fill: var(--client-color-primary);
 }
 
 .soc-icon {
     width: 20px;
     height: 20px;
+    color: currentColor;
 }
 
 .soc-link:hover,
-.soc-link:focus {
-    background-color: var(--text-color-accent);
-}
-
+.soc-link:focus,
 .soc-icon:hover,
 .soc-icon:focus {
+    background-color: var(--text-color-accent);
     fill: var(--footer-color-text-secondary);
 }
 
@@ -428,6 +423,15 @@ img {
     background-color: var(--footer-bg-color);
 }
 
+.bsmt-sector {
+    display: flex;
+}
+
+.bsmt-contacts {
+    max-width: 231px;
+    margin-right: 70px;
+}
+
 .logo-bsmt {
     display: block;
     margin-bottom: 20px;
@@ -465,6 +469,53 @@ img {
 .bsmt-item {
     text-decoration: none;
     color: var(--footer-color-text-primary);
+}
+
+.bsmt-soc {
+    width: 206px;
+    margin-right: auto;
+}
+
+.bsmt-soc-title {
+    margin-bottom: 20px;
+    color: var(--footer-color-text-secondary);
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.bsmt-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bsmt-soc-link {
+    display: flex;
+    border-radius: 50%;
+    padding: 12px;
+    background-position: center;
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--footer-color-text-secondary);
+}
+
+.bsmt-soc-icon {
+    width: 20px;
+    height: 20px;
+    color: currentColor;
+}
+
+.bsmt-soc-link:hover,
+.bsmt-soc-link:focus,
+.bsmt-soc-icon:hover,
+.bsmt-soc-icon:focus {
+    background-color: var(--text-color-accent);
+    fill: var(--footer-color-text-secondary);
 }
 
 /* -------------------portfolio------------------------ */
