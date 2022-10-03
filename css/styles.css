@@ -105,26 +105,22 @@ img {
 
 .main-nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .contact {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
 }
 
+.icon-phone,
 .icon-mail {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
-    fill: currentColor;
-}
-
-.icon-phone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
+    color: currentColor;
 }
 
 .nav-link:hover,
@@ -132,10 +128,9 @@ img {
 .contact-mail:hover,
 .contact-mail:focus,
 .contact-tel:hover,
-.contact-tel:focus,
-.bsmt-item:hover,
-.bsmt-item:focus {
+.contact-tel:focus {
     color: var(--text-color-accent);
+    fill: var(--text-color-accent);
 }
 
 .nav-link {
@@ -154,9 +149,8 @@ img {
 .contact-mail,
 .contact-tel {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: var(--text-color-secondary);
 }
@@ -168,7 +162,6 @@ img {
     text-align: center;
 
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -181,7 +174,7 @@ img {
         url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -232,13 +225,16 @@ img {
     display: flex;
     list-style-type: none;
 }
+.about-draw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 20px;
+    background-color: var(--team-bg-color);
+}
 .icon-about {
     display: inline-block;
-    margin-bottom: 20px;
-    width: 270px;
-    height: 120px;
-    padding: 25px 100px;
-    background-color: var(--team-bg-color);
     border-radius: 4px;
 }
 
@@ -358,10 +354,20 @@ img {
     gap: 10px;
 }
 
+.soc-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .soc-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    padding: 12px;
     background-position: center;
     fill: var(--client-color-primary);
 }
@@ -371,9 +377,7 @@ img {
 }
 
 .soc-link:hover,
-.soc-link:focus,
-.soc-icon:hover,
-.soc-icon:focus {
+.soc-link:focus {
     background-color: var(--text-color-accent);
     fill: var(--footer-color-text-secondary);
 }
@@ -384,33 +388,33 @@ img {
     display: flex;
     gap: 30px;
 }
+
 .client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
 }
 
 .client-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
     fill: var(--client-color-primary);
     border: 1px solid var(--client-color-primary);
     border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    align-items: center;
-    justify-content: center;
 }
 
 .link-icon {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-    fill: var(--client-color-primary);
+    color: currentColor;
 }
 
-.link-icon:hover,
-.link-icon:focus,
 .client-link:hover,
-.client-link:focus {
+.client-link:focus 
+.link-icon {
     border-color: var(--text-color-accent);
     fill: var(--text-color-accent);
 }
@@ -490,16 +494,20 @@ img {
 
 .bsmt-soc-list {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
 .bsmt-soc-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    padding: 12px;
     background-position: center;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     fill: var(--footer-color-text-secondary);
 }
 
@@ -507,10 +515,8 @@ img {
     color: currentColor;
 }
 
-.bsmt-soc-link:hover,
 .bsmt-soc-link:focus,
-.bsmt-soc-icon:hover,
-.bsmt-soc-icon:focus {
+.bsmt-soc-link:hover {
     background-color: var(--text-color-accent);
     fill: var(--footer-color-text-secondary);
 }
